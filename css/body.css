@@ -239,6 +239,7 @@ input::placeholder {
 
     .info {
         padding: 15px 0;
+        width: 100%;
     }
 
     .info-feedback {
