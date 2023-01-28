@@ -9,12 +9,12 @@
 .info-title {
     color: #121212;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 44px;
     line-height: 56px;
 }
 
 .info-city {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
     font-weight: 500;
     padding-top: 20px;
@@ -25,7 +25,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
-    font-size: calc((100vw - 541px)/(1920 - 541) * (64 - 21) + 21px);
+    font-size: 40px;
     font-weight: 400;
     background-color: #121212;
     padding: 12px 20px;
@@ -35,7 +35,7 @@
     width: 34%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: #FFFFFF;
 }
 
@@ -85,11 +85,23 @@
     cursor: default;
 }
 
-.info-about-me {
-    font-size: 32px;
-    line-height: 37px;
+h2 {
     font-weight: 500;
-    padding-top: 50px;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.info-about-me {
+    margin-top: 60px;
+    max-width: 1024px;
+}
+
+
+.info-about-me p {
+    font-size: 32px;
+    line-height: 38px;
+    text-indent: 30px;
+    padding-top: 10px;
 }
 
 .info__input {
@@ -133,6 +145,15 @@ input::placeholder {
     background-color: #1E1E1E;
 }
 
+.whatsapp:hover,
+.instagram:hover,
+.vk:hover,
+.telegram:hover,
+.linkedin:hover,
+.github:hover {
+    opacity: 0.5;
+}
+
 @media (max-width: 992px) {
     .info {
         padding: 15px 40px;
@@ -141,6 +162,12 @@ input::placeholder {
     .info-title {
         font-size: 32px;
         line-height: 38px;
+    }
+
+    .developer {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
     }
 
     .info-city {
@@ -179,8 +206,8 @@ input::placeholder {
     }
 
     .info-about-me p {
-        text-indent: 24px;
-        padding-top: 10px;
+        font-size: 20px;
+        line-height: 23px;
     }
 
     .info__input {
@@ -203,6 +230,7 @@ input::placeholder {
 
 }
 
+
 @media (max-width: 540px) {
 
     .resume {
@@ -219,6 +247,8 @@ input::placeholder {
 
     .developer {
         font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
     }
 
     .info-city {
@@ -260,6 +290,12 @@ input::placeholder {
 
     .info-about-me h2 {
         font-size: 20px;
+        line-height: 19px;
+    }
+
+    .info-about-me p {
+        font-size: 19px;
+        line-height: 23px;
     }
 
     .info__input {
@@ -276,13 +312,4 @@ input::placeholder {
         margin-top: 16px;
         height: 35px;
     }
-}
-
-.whatsapp:hover,
-.instagram:hover,
-.vk:hover,
-.telegram:hover,
-.linkedin:hover,
-.github:hover {
-    opacity: 0.5;
 }
